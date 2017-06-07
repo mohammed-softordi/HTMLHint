@@ -14,7 +14,7 @@ HTMLHint.addRule({
             var col = event.col + event.tagName.length + 1;
             for(var i=0, l=attrs.length;i<l;i++){
                 attr = attrs[i];
-                if(attr.name.toLowerCase() === 'class' && (attr.value.indexOf('icon') > -1)){
+                if(attr.name.toLowerCase() === 'class' && ((attr.value.indexOf('icon') > -1) && (attr.value.indexOf('fa') === -1))){
                     reporter.warn('Class icon-* in [ '+attr.raw+' ] is deprecated and will be soon removed. Corporate ' +
                     'icons e.g. icon-truck can still be used. For other icons use fa fa-* instead.', event.line, col + attr.index, self, attr.raw);
                 }
