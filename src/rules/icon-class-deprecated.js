@@ -1,5 +1,6 @@
 /**
  *  Created by maya5j on 2015-11-30 (Mohammed Ayowa) <mohammed.ayowa@scania.com>
+ *  Thanks to Yanis Wang <yanis.wang@gmail.com>
  * MIT Licensed
  */
 HTMLHint.addRule({
